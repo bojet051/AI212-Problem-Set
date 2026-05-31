@@ -1,0 +1,38 @@
+Distribution Equivalence Study
+Seed: 212
+
+Binomial vs Normal
+  p: 0.400000
+  sample_size: 100000
+  plot: distribution_equivalence_output/binomial_normal_convergence.png
+  convergence_rows:
+    N=10, sample_mean=4.001790, theoretical_mean=4.000000, absolute_mean_error=0.001790, sample_variance=2.384591, theoretical_variance=2.400000, absolute_variance_error=0.015409
+    N=30, sample_mean=11.996440, theoretical_mean=12.000000, absolute_mean_error=0.003560, sample_variance=7.214319, theoretical_variance=7.200000, absolute_variance_error=0.014319
+    N=100, sample_mean=39.997770, theoretical_mean=40.000000, absolute_mean_error=0.002230, sample_variance=24.018625, theoretical_variance=24.000000, absolute_variance_error=0.018625
+    N=500, sample_mean=199.989520, theoretical_mean=200.000000, absolute_mean_error=0.010480, sample_variance=119.360124, theoretical_variance=120.000000, absolute_variance_error=0.639876
+
+Binomial vs Poisson
+  N: 1000
+  p: 0.005000
+  lambda: 5.000000
+  sample_size: 100000
+  sample_mean: 5.015140
+  theoretical_mean: 5.000000
+  absolute_mean_error: 0.015140
+  sample_variance: 5.019201
+  theoretical_variance: 5.000000
+  absolute_variance_error: 0.019201
+  plot: distribution_equivalence_output/binomial_poisson_equivalence.png
+
+Exponential interarrivals vs Poisson counts
+  lambda: 2.000000
+  T: 4.000000
+  lambda_T: 8.000000
+  num_trials: 50000
+  sample_mean: 8.006780
+  theoretical_mean: 8.000000
+  absolute_mean_error: 0.006780
+  sample_variance: 7.988894
+  theoretical_variance: 8.000000
+  absolute_variance_error: 0.011106
+  plot: distribution_equivalence_output/exponential_poisson_equivalence.png
