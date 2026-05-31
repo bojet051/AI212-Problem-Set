@@ -1,0 +1,4 @@
+k,predictors,ols_cv_rmse_improvement_from_previous,bayes_cv_rmse_improvement_from_previous
+1,AGE,,
+2,AGE + GRP,0.0002904255267402456,0.00029042552674343747
+3,AGE + GRP + S.P.,0.0037592387729319665,0.0037592387729329935

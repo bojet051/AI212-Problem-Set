@@ -1,0 +1,2 @@
+prior,actual_mean,predicted_mean,actual_sd,residual_sd,rmse,posterior_predictive_95_coverage,posterior_predictive_95_width_mean
+noninformative,0.6074130663886226,0.6074130663801598,0.17732103011181546,0.13168173452516738,0.13168081717328572,0.9520293146447829,0.5162028144349115

@@ -1,0 +1,8 @@
+,rows
+raw_selected_rows,128066
+after_drop_all_empty_rows,127054
+after_core_non_null_filter,96554
+after_positive_eggset_filter,72118
+duplicates_removed,345
+after_deduplication,71773
+after_target_bounds_filter,71773

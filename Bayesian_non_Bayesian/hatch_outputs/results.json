@@ -1,0 +1,307 @@
+{
+  "raw_shape": [
+    128066,
+    16
+  ],
+  "clean_shape": [
+    71773,
+    20
+  ],
+  "modeling_shape": [
+    71773,
+    20
+  ],
+  "columns": [
+    "HY",
+    "LOCATION",
+    "WEEK_NO",
+    "HATCH_DATE",
+    "DATE_SET",
+    "FARM_SOURCE",
+    "LINE",
+    "B",
+    "H",
+    "STRAIN",
+    "PRODN_DATE",
+    "AGE",
+    "GRP",
+    "S.P.",
+    "EGGSET",
+    "CLEAN_CHICKS",
+    "WEEK_NO_RAW",
+    "WEEK_NO_NUM",
+    "CLEAN_CHICKS_RATIO",
+    "CLEAN_CHICKS_PCT"
+  ],
+  "predictor_metadata": {
+    "raw_candidate_predictors": [
+      "HY",
+      "LOCATION",
+      "WEEK_NO",
+      "HATCH_DATE",
+      "DATE_SET",
+      "FARM_SOURCE",
+      "LINE",
+      "B",
+      "H",
+      "STRAIN",
+      "PRODN_DATE",
+      "AGE",
+      "GRP",
+      "S.P."
+    ],
+    "excluded_from_predictors": [
+      "EGGSET",
+      "CLEAN_CHICKS",
+      "CLEAN_CHICKS_RATIO",
+      "CLEAN_CHICKS_PCT"
+    ],
+    "categorical_candidates_not_encoded": [
+      "HY",
+      "LOCATION",
+      "FARM_SOURCE",
+      "LINE",
+      "B",
+      "H",
+      "STRAIN"
+    ],
+    "date_candidates_not_engineered": [
+      "WEEK_NO",
+      "HATCH_DATE",
+      "DATE_SET",
+      "PRODN_DATE"
+    ],
+    "raw_numeric_candidates": [
+      "AGE",
+      "GRP",
+      "S.P."
+    ],
+    "selected_predictors": [
+      "AGE",
+      "GRP",
+      "S.P."
+    ],
+    "skipped_for_collinearity": []
+  },
+  "predictors": [
+    "AGE",
+    "GRP",
+    "S.P."
+  ],
+  "response": "CLEAN_CHICKS_RATIO",
+  "ols_train_rmse": 0.1316808171732857,
+  "ols_r2": 0.4485189601742817,
+  "ols_adj_r2": 0.4484959078380435,
+  "ols_aic": -87330.52579423375,
+  "ols_coefficients": [
+    {
+      "term": "Intercept",
+      "estimate": 1.0968700929398,
+      "ci_95_low": 1.08868505827594,
+      "ci_95_high": 1.1050551276036602,
+      "p_value": 0.0
+    },
+    {
+      "term": "AGE",
+      "estimate": -0.006512666365671688,
+      "ci_95_low": -0.006924797889897787,
+      "ci_95_high": -0.006100534841445588,
+      "p_value": 3.03961808618246e-209
+    },
+    {
+      "term": "GRP",
+      "estimate": -0.024107162765173645,
+      "ci_95_low": -0.02653541409602459,
+      "ci_95_high": -0.021678911434322698,
+      "p_value": 4.0771248483262226e-84
+    },
+    {
+      "term": "S.P.",
+      "estimate": -0.007873177776285475,
+      "ci_95_low": -0.008112406909393634,
+      "ci_95_high": -0.007633948643177317,
+      "p_value": 0.0
+    }
+  ],
+  "bayes_noninformative_rmse": 0.13168081717328572,
+  "bayes_informative_rmse": 0.13168081717328572,
+  "bayes_noninformative_coefficients_original_scale": [
+    {
+      "term": "Intercept",
+      "mean": 1.0968329657259062,
+      "cred_95_low": 1.089023127873142,
+      "cred_95_high": 1.1048450047131162
+    },
+    {
+      "term": "AGE",
+      "mean": -0.006509662081628587,
+      "cred_95_low": -0.006919894618636251,
+      "cred_95_high": -0.006105787489497951
+    },
+    {
+      "term": "GRP",
+      "mean": -0.024129481594124983,
+      "cred_95_low": -0.026455352501472795,
+      "cred_95_high": -0.021737237313408975
+    },
+    {
+      "term": "S.P.",
+      "mean": -0.00787287853166929,
+      "cred_95_low": -0.008111695014546392,
+      "cred_95_high": -0.007634786648868159
+    }
+  ],
+  "bayes_informative_coefficients_original_scale": [
+    {
+      "term": "Intercept",
+      "mean": 1.0969105809373019,
+      "cred_95_low": 1.0908332650464871,
+      "cred_95_high": 1.1032077358719927
+    },
+    {
+      "term": "AGE",
+      "mean": -0.006513827795063957,
+      "cred_95_low": -0.006772598995609479,
+      "cred_95_high": -0.006253405900471099
+    },
+    {
+      "term": "GRP",
+      "mean": -0.024099012126355356,
+      "cred_95_low": -0.025587709331100505,
+      "cred_95_high": -0.022562161672223507
+    },
+    {
+      "term": "S.P.",
+      "mean": -0.007875512164604633,
+      "cred_95_low": -0.008109026633337542,
+      "cred_95_high": -0.00764408097469417
+    }
+  ],
+  "posterior_predictive_checks": [
+    {
+      "prior": "noninformative",
+      "actual_mean": 0.6074130663886226,
+      "predicted_mean": 0.6074130663801598,
+      "actual_sd": 0.17732103011181546,
+      "residual_sd": 0.13168173452516738,
+      "rmse": 0.13168081717328572,
+      "posterior_predictive_95_coverage": 0.9520293146447829,
+      "posterior_predictive_95_width_mean": 0.5162028144349115
+    },
+    {
+      "prior": "informative_from_OLS",
+      "actual_mean": 0.6074130663886226,
+      "predicted_mean": 0.6074130663886227,
+      "actual_sd": 0.17732103011181546,
+      "residual_sd": 0.13168173452516738,
+      "rmse": 0.13168081717328572,
+      "posterior_predictive_95_coverage": 0.9520293146447829,
+      "posterior_predictive_95_width_mean": 0.5162003017176416
+    }
+  ],
+  "cv_ols": [
+    {
+      "k": 1,
+      "predictors": "AGE",
+      "cv_rmse_mean": 0.13573635385638388,
+      "cv_rmse_sd": 0.0012931793366324064,
+      "train_rmse": 0.13573803016028718,
+      "bootstrap_632_rmse": 0.13565521736473368,
+      "bootstrap_oob_rmse": 0.13560699725593037,
+      "aic": -82978.50232632054,
+      "bic": -82960.13979904105,
+      "r2": 0.41401210514347264,
+      "adj_r2": 0.41400394045446376
+    },
+    {
+      "k": 2,
+      "predictors": "AGE + GRP",
+      "cv_rmse_mean": 0.13544592832964364,
+      "cv_rmse_sd": 0.0012965831579216803,
+      "train_rmse": 0.13544418276076758,
+      "bootstrap_632_rmse": 0.13543115576009168,
+      "bootstrap_oob_rmse": 0.13542357041792596,
+      "aic": -83287.58936160806,
+      "bic": -83260.04557068882,
+      "r2": 0.41654646693147923,
+      "adj_r2": 0.41653020795048246
+    },
+    {
+      "k": 3,
+      "predictors": "AGE + GRP + S.P.",
+      "cv_rmse_mean": 0.13168668955671167,
+      "cv_rmse_sd": 0.0011376247144383627,
+      "train_rmse": 0.13168081717328572,
+      "bootstrap_632_rmse": 0.1316765240803956,
+      "bootstrap_oob_rmse": 0.13167402430478867,
+      "aic": -87330.52579423375,
+      "bic": -87293.80073967477,
+      "r2": 0.4485189601742817,
+      "adj_r2": 0.4484959078380435
+    }
+  ],
+  "cv_bayes": [
+    {
+      "k": 1,
+      "predictors": "AGE",
+      "bayes_cv_rmse_mean": 0.1357363538563842,
+      "bayes_cv_rmse_sd": 0.0012931793365704783,
+      "bayes_train_rmse": 0.13573803016028715,
+      "waic": -82975.87399277276,
+      "lppd": 41491.670626397696,
+      "p_waic": 3.733630011314712
+    },
+    {
+      "k": 2,
+      "predictors": "AGE + GRP",
+      "bayes_cv_rmse_mean": 0.13544592832964075,
+      "bayes_cv_rmse_sd": 0.0012965831578495718,
+      "bayes_train_rmse": 0.13544418276076758,
+      "waic": -83284.9863121823,
+      "lppd": 41647.120344507035,
+      "p_waic": 4.627188415887162
+    },
+    {
+      "k": 3,
+      "predictors": "AGE + GRP + S.P.",
+      "bayes_cv_rmse_mean": 0.13168668955670776,
+      "bayes_cv_rmse_sd": 0.0011376247143413164,
+      "bayes_train_rmse": 0.13168081717328572,
+      "waic": -87327.58625124853,
+      "lppd": 43669.69023414538,
+      "p_waic": 5.897108521118215
+    }
+  ],
+  "selection_summary": [
+    {
+      "criterion": "OLS 5-fold CV RMSE",
+      "best_k": 3,
+      "predictors": "AGE + GRP + S.P.",
+      "score": 0.13168668955671167
+    },
+    {
+      "criterion": "OLS 0.632 Bootstrap RMSE",
+      "best_k": 3,
+      "predictors": "AGE + GRP + S.P.",
+      "score": 0.1316765240803956
+    },
+    {
+      "criterion": "OLS AIC",
+      "best_k": 3,
+      "predictors": "AGE + GRP + S.P.",
+      "score": -87330.52579423375
+    },
+    {
+      "criterion": "Bayesian 5-fold CV RMSE",
+      "best_k": 3,
+      "predictors": "AGE + GRP + S.P.",
+      "score": 0.13168668955670776
+    },
+    {
+      "criterion": "Bayesian WAIC",
+      "best_k": 3,
+      "predictors": "AGE + GRP + S.P.",
+      "score": -87327.58625124853
+    }
+  ]
+}

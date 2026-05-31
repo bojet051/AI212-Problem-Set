@@ -1,3 +1,9 @@
 .DS_Store
 __pycache__/
 *.pyc
+.venv/
+Hatch_Model.xlsx
+.ipython_cache/
+.matplotlib_cache/
+*.xlsx~
+.~*.xlsx
