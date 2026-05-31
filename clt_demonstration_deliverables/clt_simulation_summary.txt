@@ -1,0 +1,20 @@
+Central Limit Theorem Demonstration
+Seed: 212
+Replications per setting: 20000
+Sample sizes: [5, 10, 30, 100]
+
+Selected summary statistics for n=100:
+Uniform(-sqrt(3), sqrt(3))     | mean     | mean=-0.00028 | var=0.009901 | skew=-0.0157 | excess kurt=-0.0709
+Uniform(-sqrt(3), sqrt(3))     | median   | mean=-0.00013 | var=0.029248 | skew=-0.0082 | excess kurt=-0.0915
+Uniform(-sqrt(3), sqrt(3))     | trimmed  | mean=-0.00021 | var=0.013750 | skew=-0.0172 | excess kurt=-0.0711
+Normal(0, 1)                   | mean     | mean=-0.00141 | var=0.010071 | skew=-0.0435 | excess kurt=-0.0018
+Normal(0, 1)                   | median   | mean=-0.00055 | var=0.015612 | skew=-0.0343 | excess kurt=+0.0218
+Normal(0, 1)                   | trimmed  | mean=-0.00119 | var=0.010655 | skew=-0.0455 | excess kurt=-0.0070
+Student t(df=3)                | mean     | mean=-0.00152 | var=0.029684 | skew=+0.1006 | excess kurt=+1.7747
+Student t(df=3)                | median   | mean=-0.00101 | var=0.018611 | skew=+0.0045 | excess kurt=+0.0723
+Student t(df=3)                | trimmed  | mean=-0.00134 | var=0.016328 | skew=+0.0135 | excess kurt=+0.0820
+
+Saved CSV: clt_output/clt_summary_statistics.csv
+Number of histogram plots: 12
+Number of Q-Q plots: 9
+Number of variance comparison plots: 3
