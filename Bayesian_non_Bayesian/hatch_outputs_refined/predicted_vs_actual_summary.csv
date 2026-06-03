@@ -1,0 +1,4 @@
+model,n_rows,rmse,mae,bias,pi95_coverage
+OLS,71826,0.105361,0.078546,-0.0,0.9457
+Bayesian weak prior,71826,0.105361,0.078546,-0.0,0.9457
+Bayesian inform. prior,71826,0.105361,0.078546,-0.0,0.9457

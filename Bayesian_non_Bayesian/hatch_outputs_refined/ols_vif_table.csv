@@ -1,0 +1,9 @@
+design,term,vif
+raw_age_polynomial,AGE,470.52790313975436
+raw_age_polynomial,AGE_RAW_SQ,1493.3586111107797
+raw_age_polynomial,AGE_RAW_CU,322.1540741759931
+raw_age_polynomial,S.P.,1.0161141343570361
+centered_age_polynomial,AGE_CENTERED,1.3887003962764426
+centered_age_polynomial,AGE_CENTERED_SQ,2.238874598250338
+centered_age_polynomial,AGE_CENTERED_CU,2.722019379377892
+centered_age_polynomial,S.P.,1.016114134357067

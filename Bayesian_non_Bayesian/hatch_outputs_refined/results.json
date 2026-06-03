@@ -1,0 +1,52 @@
+{
+  "raw_shape": [
+    128066,
+    16
+  ],
+  "clean_shape": [
+    71826,
+    21
+  ],
+  "modeling_shape": [
+    71826,
+    25
+  ],
+  "ols_train_rmse": 0.10536143806022401,
+  "ols_r2": 0.6473124336184819,
+  "ols_adj_r2": 0.647189631541051,
+  "ols_aic": -119383.151502841,
+  "bayes_noninformative_rmse": 0.10536143806022401,
+  "bayes_informative_rmse": 0.10536143806022401,
+  "selection_summary": [
+    {
+      "criterion": "OLS 5-fold CV RMSE",
+      "best_k": 5,
+      "selected_model": "AGE + S.P. + LINE + FARM_SOURCE + STRAIN",
+      "score": 0.1054230660287048
+    },
+    {
+      "criterion": "OLS 0.632 bootstrap RMSE",
+      "best_k": 5,
+      "selected_model": "AGE + S.P. + LINE + FARM_SOURCE + STRAIN",
+      "score": 0.1055207362017289
+    },
+    {
+      "criterion": "OLS AIC",
+      "best_k": 5,
+      "selected_model": "AGE + S.P. + LINE + FARM_SOURCE + STRAIN",
+      "score": -119383.151502841
+    },
+    {
+      "criterion": "Bayesian 5-fold CV RMSE",
+      "best_k": 5,
+      "selected_model": "AGE + S.P. + LINE + FARM_SOURCE + STRAIN",
+      "score": 0.1054230660286913
+    },
+    {
+      "criterion": "Bayesian WAIC",
+      "best_k": 5,
+      "selected_model": "AGE + S.P. + LINE + FARM_SOURCE + STRAIN",
+      "score": -119369.67724576624
+    }
+  ]
+}
